@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{anysize}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+\marginsize{3.5cm}{2.5cm}{1.5cm}{1.5cm}
+
+\setlength{\parindent}{0pt}
+\linespread {1.25}
+
+\author{Tobias Meier (meierto3), Yacine Mekesser (mekesyac)}
+\title{\large{Zusammenfassung}}
+\begin{document}
+	
+	\makeatletter
+	\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+		\begin{flushleft}
+			\textbf{\@title}
+		\end{flushleft}\egroup
+	}
+	\makeatother
+	\thispagestyle{empty}
+		
+	\maketitle
+	Zunehmend komplexe Softwaresysteme und agile Entwicklungsmethoden machen es immer schwieriger, die Code-Qualität eines Softwareprojektes zu kontrollieren. Deshalb wäre ein System zur Fehlervorhersage wünschenswert.
+	Wir glauben, dass Machine Learning das Potenzial bietet, um ein solches System zu ermöglichen.
+	Diese Bachelorarbeit hat zum Ziel, bestehende Ansätze mit Konzepten der Textanalyse, insbesondere N-Grams, zu erweitern. Ausserdem soll eine Grundlage für zukünftige Arbeiten zu diesem Themengebiet geschaffen werden.
+	Dafür wurde ein umfassendes und modulares Toolset entwickelt. Dieses ist in der Lage, Git-Repositories beliebiger Java-Projekte zu analysieren. Die dabei extrahierten Daten können dann als Lernbasis für einen Machine-Learning-Algorithmus verwendet werden. Damit versuchen wir vorherzusagen, wie viele Bugfixes eine Dateiversion in den kommenden Monaten erfahren wird.
+	Die implementierte Lösung zeigte, dass statistisch signifikante Zusammenhänge zwischen den genutzten Features und der Fehleranfälligkeit von Java-Dateien bestehen. Jedoch konnten die Resultate der Experimente den Nutzen der N-Grams nicht bestätigen.
+	\\
+	\\
+	\paragraph{Schlüsselwörter:} Fehlervorhersage, Machine Learning, Regression, N-Grams, Repository Mining, Software Metrics, Feature Design
+
+\end{document}
